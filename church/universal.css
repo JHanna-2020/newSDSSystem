@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    transition: all 0.2s ease-in-out;
+    color: inherit;
+}
+
+body {
+    background: url(imgs/AAR.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for form */
+.container {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Login and signup titles */
+.login-form h2 {
+    color: #388e3c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Labels */
+.label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #2e7d32;
+    text-align: left;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+/* Button */
+#loginBtn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+#loginBtn:hover {
+    background-color: #2e7d32;
+}
+
+/* Show password label */
+.show {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .login-form h2 {
+        font-size: 1.25rem;
+    }
+}

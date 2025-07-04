@@ -1,0 +1,95 @@
+body{
+    background: url(imgs/AAR.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.group {
+    display: grid;
+    grid-template-areas:
+        ". top ."
+        "left center right"
+        "ql bottom qr"
+        ". bottom2 .";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+    #header{
+        text-align: center;
+    }
+#logout{
+  position: absolute;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border:0;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.section {
+    background-color: #d69702d9;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #ffb302d9;
+    transform: scale(1.05);
+}
+
+.top {
+    grid-area: top;
+}
+
+.left {
+    grid-area: left;
+}
+
+.center {
+    grid-area: center;
+}
+
+.right {
+    grid-area: right;
+}
+
+.bottom {
+    grid-area: bottom;
+}
+
+.bottom2 {
+    grid-area: bottom2;
+}
+
+
+
+
+#header {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#logout {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.group {
+    display: grid;
+    grid-template-areas:
+    ". top ."
+    "left center right"
+    "ql  bottom qr";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section {
+    background-color: #d69702d9;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #ffb302d9;
+    transform: scale(1.05);
+}
+
+.top {
+    grid-area: top;
+}
+
+.left {
+    grid-area: left;
+}
+
+.center {
+    grid-area: center;
+}
+
+.right {
+    grid-area: right;
+}
+
+.bottom {
+    grid-area: bottom;
+}
+
+

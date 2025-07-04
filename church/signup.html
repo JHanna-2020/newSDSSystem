@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up - AAR Sunday School System</title>
+    <link rel="stylesheet" href="universal.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">AAR Sunday School System</h1>
+        <div class="login-form">
+            <h2>Sign Up</h2>
+           <form action="signup.php" method="POST">
+    <label class="label" for="username">Username:</label>
+    <input type="text" id="username" name="username" required class="input" />
+
+    <label class="label" for="password">Password:</label>
+    <input type="password" id="password" name="password" required class="input" />
+
+    <label class="label" for="role">Role:</label>
+    <select name="role" id="role" class="input" required>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+    </select>
+
+    <button type="submit" id="loginBtn">Sign Up</button>
+</form>
+
+            <p style="margin-top: 10px;">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showPassword() {
+            const pass = document.getElementById("password");
+            const confirm = document.getElementById("confirm_password");
+            pass.type = pass.type === "password" ? "text" : "password";
+            confirm.type = confirm.type === "password" ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
